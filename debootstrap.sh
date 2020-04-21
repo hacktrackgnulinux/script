@@ -68,7 +68,7 @@ cd image/
 sudo rm MD5SUMS
 find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee MD5SUMS
 cd ..
-sudo mkisofs -r -V "hacktrack-2020.1-i386" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../hacktrack-2017.1CORE-i386.iso image
+sudo mkisofs -r -V "hacktrack-2020.1-i386" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../hacktrack-2020.1-i386.iso image
 cd .. && sudo chmod 777 hacktrack-2020.1-i386.iso
 isohybrid hacktrack-2020.1-i386.iso
 md5sum hacktrack-2020.1-i386.iso > hacktrack-2020.1-i386.iso.md5sums
