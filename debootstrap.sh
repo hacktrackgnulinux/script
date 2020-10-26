@@ -8,7 +8,7 @@
 # ------------------------------------------------------------
 ###################################################################
 # Default Profile <<Hack|Track GNU/Linux                       
-# version           : 2020.1
+# version           : 2021.1
 # Author            : <<Hack|Track GNU/Linux <hacktracklinux@yahoo.com>
 # Licenced          : Copyright 2017-2020 GNU GPLv3
 # Website           : http://www.hacktrack-linux.blogspot.com/
@@ -68,7 +68,7 @@ cd image/
 sudo rm MD5SUMS
 find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee MD5SUMS
 cd ..
-sudo mkisofs -r -V "hacktrack-2020.1-i386" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../hacktrack-2020.1-i386.iso image
-cd .. && sudo chmod 777 hacktrack-2020.1-i386.iso
-isohybrid hacktrack-2020.1-i386.iso
-md5sum hacktrack-2020.1-i386.iso > hacktrack-2020.1-i386.iso.md5sums
+sudo mkisofs -r -V "hacktrack-2021.1-i386" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../hacktrack-2021.1-i386.iso image
+cd .. && sudo chmod 777 hacktrack-2021.1-i386.iso
+isohybrid hacktrack-2021.1-i386.iso
+md5sum hacktrack-2021.1-i386.iso > hacktrack-2020.1-i386.iso.md5sums
